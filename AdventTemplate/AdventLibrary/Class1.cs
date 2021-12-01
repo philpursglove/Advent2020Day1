@@ -1,10 +1,10 @@
-﻿using System;
-using System.Linq;
-using System.Collections.Generic;
-
-namespace AdventLibrary
+﻿namespace AdventLibrary
 {
     public class Class1
     {
+        public string Result()
+        {
+            return "AoC";
+        }
     }
 }

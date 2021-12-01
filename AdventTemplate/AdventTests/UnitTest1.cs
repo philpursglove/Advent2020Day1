@@ -1,5 +1,5 @@
+using AdventLibrary;
 using NUnit.Framework;
-using System.Collections.Generic;
 
 
 namespace AdventTests
@@ -15,7 +15,11 @@ namespace AdventTests
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            Class1 libraryClass = new Class1();
+
+            var result = libraryClass.Result();
+
+            Assert.That(result, Is.EqualTo("AoC"));
         }
     }
 }

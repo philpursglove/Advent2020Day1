@@ -15,12 +15,16 @@ namespace AdventRunner
             {
                 using (StreamReader reader = new StreamReader(stream))
                 {
-                    while(!reader.EndOfStream)
+                    while (!reader.EndOfStream)
                     {
                         input.Add(reader.ReadLine());
                     }
                 }
             }
+
+            Class1 libraryClass = new Class1();
+
+            Console.WriteLine(libraryClass.Result());
 
             Console.ReadLine();
         }
