@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace AdventRunner
 {
@@ -9,18 +10,7 @@ namespace AdventRunner
     {
         static void Main(string[] args)
         {
-            List<string> input = new List<string>();
-
-            using (FileStream stream = new FileStream("InputFile.txt", FileMode.Open))
-            {
-                using (StreamReader reader = new StreamReader(stream))
-                {
-                    while (!reader.EndOfStream)
-                    {
-                        input.Add(reader.ReadLine());
-                    }
-                }
-            }
+            List<string> input = File.ReadAllLines("InputFile.txt").ToList();
 
             Class1 libraryClass = new Class1();
 
