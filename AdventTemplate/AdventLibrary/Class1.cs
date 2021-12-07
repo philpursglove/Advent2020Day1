@@ -1,4 +1,7 @@
-﻿namespace AdventLibrary
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace AdventLibrary
 {
     public class Class1
     {
