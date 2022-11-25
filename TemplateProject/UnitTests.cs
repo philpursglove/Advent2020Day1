@@ -3,7 +3,7 @@
 namespace TemplateProject
 {
     [TestFixture]
-    public class TestFixture
+    public class UnitTests
     {
     }
 }
