@@ -13,10 +13,10 @@
 			return Math.Abs(x1 - x2) + Math.Abs(y1 - y2);
 		}
 
-		private static int getCoordinateValue(object point1, string xPropertyName)
+		private static int getCoordinateValue(object point1, string PropertyName)
 		{
 			Type type = point1.GetType();
-			return (int) type.GetProperty(xPropertyName).GetValue(point1);
+			return (int) type.GetProperty(PropertyName).GetValue(point1);
 		}
 	}
 }
