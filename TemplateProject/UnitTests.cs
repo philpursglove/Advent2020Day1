@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace TemplateProject
+namespace $safeprojectname$
 {
     [TestFixture]
     public class UnitTests
